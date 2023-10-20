@@ -228,6 +228,7 @@
   }
   .sectionleft{
     height:500px;
+    padding-right: 10%;
     display:flex;
     align-items:center;
     justify-content: space-evenly;
@@ -274,38 +275,56 @@
 
   /* Section bacckground*/
   .background1{
-    background: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+    background: url('../img/computers.jpg');
+    padding-right: 10%;
     background-size: cover;
     background-blend-mode: darken;
     max-width: 100%;
+    height: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-color: white;
+  
 }
 
 .background2{
-  background: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+  background: url('../img/evoklai.jpg');
+  padding-right: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
+  height: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .background3{
-  background: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+  background: url('../img/ar vr.jpg');
+  padding-right: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
+  height: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
 .background4{
-  background: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+  background: url('../img/data analytics.jpg');
+  padding-right: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
+  height: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .background5{
-  background: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+  background: url('../img/james-a-molnar-jMDtJtFs8EQ-unsplash.jpg');
+  padding-right: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
+  height: 500px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Contact background */
@@ -314,4 +333,5 @@
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
+  height: 500px;
 }
