@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>BYTE LEARN - Transfroming Online Education</title>
 </head>
-</body>
+<body>
 
-    <nav class="navbar background">
+    <nav class="navbar bacck">
         <ul class="nav-list">
-            <div class ="logo"><img src="img/logo_sub.jpg" alt="logo"></div>           
-            <li><a href ="#home"> Home </a></li>
-            <li><a href ="#about us"> About </a></li>
-            <li><a href ="#services"> Services </a></li>
-            <li><a href ="#contact"> Contact </a></li>
-            <li><a href ="#learn"> Learn </a></li>
+            <li><div class ="logo"><img src="img/logo_sub.jpg" alt="logo"></div></li>        
+            <li><a href ="#" target="_self">Home </a>
+                <div class="sub-menu-1"><ul>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Recent Blogs</a></li>
+                    
+                </ul> </div>
+            </li>
+            <li><a href ="#about us" target="_self"> About </a>
+                <div class="sub-menu-1"><ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Team</a></li>
+                    
+                </ul> </div>
+            </li>
+            <li><a href ="#services"> Services </a>
+                <div class="sub-menu-1"><ul>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Pricings</a></li>
+                    <li><a href="#">Service details </a></li>
+                    
+                </ul> </div>
+            </li>
+            <li><a href ="#contact"> Contact </a>
+                <div class="sub-menu-1"><ul>
+                    <li><a href="#ContactUs" target="_self">Contact Forum</a></li>
+                    <li><a href="#">Social Media </a></li>
+                    <li><a href="#">Bussiness Hours</a></li>
+                    
+                </ul> </div>
+            </li>
+            <li><a href ="#learn"> Learn </a>
+                <div class="sub-menu-1"><ul>
+                    <li><a href="#">Video Lessons</a></li>
+                    <li><a href="#Fun Games" target="_self">QUIZES</a></li>
+                    <li><a href="#Word Guess" target="_self">GUESS THE WORD</a></li>
+                    
+                </ul> </div>
+            </li>
             
         </ul>
         <br>
@@ -27,87 +64,166 @@
                   </button>
                 </div>
         </div>
+        <div class ="profile_logo"><img src="img/Untitled design (1).png" alt="logo" onclick="toggleMenu()"></div>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="profile_logo">
+                <img src="img/Untitled design (1).png">
+                <h3> Harshit gautam</h3> </div>
+            <hr> 
+            <a href="#" class="sub-menu-link">
+                <img src="img/edit.jpg">
+                <p class="paraPro"> Edit Profile </p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="img/settings.jpg">
+                <p class="paraPro"> Settings & Privacy </p>
+                <span> > </span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="img/help.jpg">
+                <p class="paraPro">Help & Support </p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <img src="img/logout.jpg">
+                <p class="paraPro"> Logout</p>
+                <span>></span>
+            </a>
+        </div> 
+            </div>
+        </div>
     </nav>
+
     <section class = "background firstsection">
         <div class = "box-main">
             <div class="firsthalf">
+                <br>
+                <br>
                 <p class= "text-big">Empower Engage Excel </p>
                 <p class="text-small"> Your Pathway to tech mastery,where education and technology seamlessly intersect.</p>
                 <div class="buttons">
-                    <button class="btn">Watch Video</button>
-                    <button class="Share">Share</button>
+                    <button class="btn"><a href="https://www.youtube.com/channel/UC9iOstsJRj2inY6u3u7Qj7w" target="_blank">Watch Video</a></button>
+                    <button class="Share"><a href="https://chat.whatsapp.com/FOuuVcxecREBvmxBPdlOM2" target="_blank">Share</a></button>
                 </div>
             </div>
                 
             <div class="secondHalf">
+        
                 <img src="img/logo 2.jpg" alt="laptop image">   
             </div>
         </div>
+        <div>
     </section>
     <section class="background1 section">
         <div class="paras"> 
-        <h1>Software Development and Engineering </h1>
+        <h1 class="h1col">Software Development and Engineering </h1>
         <br>
         <p class="sectionSubTag text-small">Designing Intuitive Interfaces:Software development plays a pivotal role in revolutionizing education technology, ushering in a new era of personalized and interactive learning experiences. Through the creation of innovative educational software applications, mobile apps, and web platforms, students can access a diverse range of content tailored to their individual learning styles and paces. Learning management systems (LMS) provide educators with efficient tools to manage courses, assignments, and assessments in virtual environments, enabling seamless communication and collaboration. Furthermore, adaptive learning systems powered by advanced algorithms dynamically adjust content delivery based on students' progress, ensuring that every learner receives the right challenges and support. As software developers continue to harness technologies like artificial intelligence and data analytics, education technology is becoming more responsive, engaging, and effective, reshaping the way knowledge is acquired and shared in modern classrooms and beyond.
-        </p> </div> 
+        </p> </div>
         <div class="thumbnail">
-            <img src="https://source.unsplash.com/random/1200x1200/?software engineering" alt="laptop image" class="imgFluid">
-          </div>
+            <img src="https://source.unsplash.com/random/1200x1200/?software engineering" alt="laptop image" class="imgFluid" />
+            <button class="A-extra">Learn More</button>
+        </div>
     </section>
 
     <section class="background2 sectionleft">
         <div class="paras"> 
-        <h1>User Experience and User Interface Design </h1>
+        <h1 class="h1col">User Experience and User Interface Design </h1>
         <br>
         <p class="sectionSubTag text-small">In the realm of education technology, the synergy between User Interface (UI) and User Experience (UX) design is paramount to creating intuitive and immersive learning environments. UI and UX designers collaborate to craft interfaces that seamlessly guide students and educators through digital platforms, enhancing engagement and facilitating effective interaction. A well-designed UI ensures that educational software, apps, and websites have a visually appealing and cohesive layout, making navigation effortless and information easily accessible. On the other hand, a thoughtful UX design takes into account the needs, preferences, and behaviors of users, resulting in interfaces that prioritize user satisfaction and seamless functionality. By integrating compelling visuals, clear navigation paths, and interactive elements, UI and UX designers contribute to the creation of education technology that not only imparts knowledge but also fosters a positive and enriching digital learning experience for all users. </p> </div>
         <div class="thumbnail">
-            <img src="https://source.unsplash.com/random/1200x1200/?UI,UX design" alt="laptop image" class="imgFluid">
-          </div>
+            <img src="https://source.unsplash.com/random/1200x1200/?UI,UX design" alt="laptop image" class="imgFluid" />
+            <button class="A-extra">Learn More</button>
+        </div>
     </section>
 
     <section class="background3 section">
         <div class="paras"> 
-        <h1>Augmented Reality and Virtual Reality </h1>
+        <h1 class="h1col">Augmented Reality and Virtual Reality </h1>
         <br>
         <p class="sectionSubTag text-small">Augmented Reality (AR) and Virtual Reality (VR) have emerged as transformative forces in education technology, offering immersive and experiential learning opportunities that transcend traditional classroom boundaries. AR overlays digital content onto the real world, enabling students to interact with virtual objects in their physical environment. This technology enriches learning by allowing students to explore complex concepts through interactive simulations, 3D models, and historical reconstructions. Meanwhile, VR creates entirely immersive environments that transport students to different times, places, or scenarios. Whether it's walking through ancient civilizations, exploring the human body, or conducting virtual science experiments, AR and VR provide unparalleled engagement and understanding. By fostering active participation, critical thinking, and multisensory experiences, AR and VR are reshaping education, offering a new dimension of learning that empowers students to grasp complex ideas and concepts in ways that were once unimaginable.
         </p> </div>
         <div class="thumbnail">
-            <img src="https://source.unsplash.com/random/1200x1200/?Augmented reality , virtual reality" alt="laptop image" class="imgFluid">
-          </div>
+            <img src="https://source.unsplash.com/random/1200x1200/?Augmented reality , virtual reality" alt="laptop image" class="imgFluid" />
+            <button class="A-extra">Learn More</button>
+        </div>
     </section>
 
     <section class="background4 sectionleft">
         <div class="paras"> 
-        <h1>Data Science and Analytics </h1>
+        <h1 class="h1col">Data Science and Analytics </h1>
         <br>
         <p class="sectionSubTag text-small">Welcome to Byte Learn: Empower, Engage, and Excel in the world of technology education. Our mission is to provide a transformative learning experience that goes beyond traditional boundaries. At Byte Learn, we believe in the power of knowledge to shape futures and fuel innovation. Through our curated courses, interactive workshops, and expert-led tutorials, we empower learners to harness the full potential of technology. We foster engagement by creating a dynamic community where like-minded individuals connect, collaborate, and explore together. With a commitment to excellence, we guide our students on a journey of skill mastery and personal growth, enabling them to excel in an ever-evolving technological landscape. Join us at Byte Learn and embark on a path that not only enriches your mind but also equips you to lead and succeed in the exciting realm of technology."</p> </div>
         <div class="thumbnail">
-            <img src="https://source.unsplash.com/random/1200x1200/?data science,statistics" alt="laptop image" class="imgFluid">
+            <img src="https://source.unsplash.com/random/1200x1200/?data science,statistics" alt="laptop image" class="imgFluid" />
+            <button class="A-extra" >Learn More</button>
           </div>
     </section>
     <section class="background5 section">
         <div class="paras"> 
-        <h1>Robotics and Automation </h1>
+        <h1 class="h1col">Robotics and Automation </h1>
         <br>
         <p class="sectionSubTag text-small">The integration of robotics and automation in education technology is revolutionizing the way students learn and engage with complex concepts. By introducing robotic assistants and hands-on automation experiences, educators can provide immersive learning opportunities that bridge the gap between theoretical knowledge and practical application. Robotics can bring abstract ideas to life, allowing students to interact with physical manifestations of concepts and fostering a deeper understanding. Moreover, robotics-based educational tools encourage collaborative problem-solving and critical thinking, as students work together to program and control robotic systems. This innovative approach not only enhances STEM education but also prepares students for a future where robotics and automation play a vital role across various industries. As education technology continues to evolve, the incorporation of robotics offers a dynamic and impactful pathway to nurturing inquisitive minds and nurturing a new generation of technologically adept learners.</p> </div>
+
         <div class="thumbnail">
             <img src="https://source.unsplash.com/random/1200x1200/?robots,machines" alt="laptop image" class="imgFluid">
+            <button class="A-extra">Learn More</button>     
+        </div>
+    </section>
+    <section class="background4 sectionleft">
+        <div class="paras"> 
+        <h1 class="h1col" id="Fun Games">Fun Games & Activities:WORDWHIZ </h1>
+        <br>
+        <p class="sectionSubTag text-small">Introducing "WordWhiz: The Ultimate Quiz and Word Guess Game" – a captivating and intellectually stimulating experience designed to challenge and entertain users of all ages! If you're a word enthusiast, a trivia buff, or simply someone looking to sharpen your linguistic skills while having a blast, then this game is tailor-made for you.In this introductory glimpse, we'll explore how WordWhiz can benefit users by engaging their minds, fostering healthy competition, and offering a platform to expand their word prowess. Let's embark on this word-tastic journey together"</p> </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/random/1200x1200/?games,gaming" alt="laptop image" class="imgFluid" />
+            <button class="A-extra"><a href="main.html" target="_self">Learn More</a></button>
           </div>
     </section>
+    <section class="background5 section">
+        <div class="paras"> 
+        <h1 class="h1col" id="Word Guess">Fun Games & Activites: GUESS THE WORD!</h1>
+        <br>
+        <p class="sectionSubTag text-small">
+            Introducing an exhilarating word game that will keep you entertained for hours on end - "Guess the Word"! Our game is designed to challenge your vocabulary and deductive skills in a fun and engaging way. Whether you're a wordsmith looking for a new challenge or just want to test your linguistic prowess, "Guess the Word" is the perfect game for you. Unleash your inner detective as you decipher clues, unravel mysteries, and put your word knowledge to the test. With a vast array of words and phrases to guess from, every round is a new adventure waiting to be explored. Join us on our website and embark on this exciting journey of word discovery and guessing. Get ready to be captivated, challenged, and thoroughly entertained by "Guess the Word" – the ultimate word game experience!</p> </div>
 
-    <section class="backgroundC contact">
-      <h1 class="text-center">Contact Us</h1>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/random/1200x1200/?alphabets,words" alt="laptop image" class="imgFluid">
+            <button class="A-extra"><a href="WORD GUESS/game1/index.html" target="_self">Learn More</a></button>     
+        </div>
+    </section>
+    <section class="backgroundC contact" >
+      <h1 class="text-center" id="ContactUs">Contact Us</h1>
       <div class="form">
-        <input type="text" name="name" email id="name" placeholder="Enter your name">
-        <input type="text" name="name" email id="name" placeholder="Enter your phone number">
-        <input type="text" name="name" email id="name" placeholder="Enter your email">
-        <input type="text" name="name" email id="name" placeholder="Enter your query">
-        <input type="text" name="name" email id="name" placeholder="Enter your suggestions">
-
+        <input  class="form-input" type="text" name="name" email id="name" placeholder="   Enter your name">
+        <input  class="form-input" type="text" name="name" email id="name" placeholder="   Enter your phone number">
+        <input  class="form-input" type="text" name="name" email id="name" placeholder="   Enter your email">
+             <textarea class="form-input" name="text" id="text" cols="20" rows="10" >   Ellaborate your concern.</textarea>
+        <button class="btn btn-dark">Submit</button>
       </div>
      
      
     </section>
+    
+    <script src="//code.tidio.co/y7xo7lgfurodkjrunf5bsoobtlsnvzds.js" async></script>
+
+    <footer class="background">
+        <p class="text-footer">
+
+        Copyright &copy; 2027 - www.ByteLearn.com.  All rights reserved
+          
+        </p>
+    
+    </footer>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 
 
 

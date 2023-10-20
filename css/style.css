@@ -6,32 +6,63 @@
     padding : 0;
 }
  .logo{
-    width:40%;
+    width:50%;
     display: flex;
+    border-radius: 200px;
     justify-content: center;
     align-items:center;
+    padding : 4px ;
+
 
  }
  .logo img{
-    width:40%;
+    width:500%;
     border: 3px solid white;
-    border-radius:50px;
+    border-radius:200px;
  }
 
+ .profile_logo{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items:center;
+    padding : 4px ;
+ }
+ .profile_logo img{
+    width:40%;
+    border: 2px solid white;
+    border-radius:50px;
+    cursor: pointer;
+ }
 .navbar{
     display:flex;
     align-items: center;
     justify-content: center;
     position:sticky;
     top:0;
-
+  
+}
+.h1col{
+  color:white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:xx-large;
 }
 
+.bacck{
+  background-color: #0d3f56;
+  background-blend-mode:darken;
+  padding:5px;
+
+
+  
+  
+}
 .nav-list{
     width:50%;
     display: flex;
     justify-content: center;
     align-items:center;
+    padding-left: 30px;
 }
 
 .nav-list li{
@@ -49,15 +80,46 @@
 }
 
 .nav-list li a:hover{
-    color:grey;
+    color:yellow;
 }
 
 .rightNav{
-    width:50%;
-    text-align: right;
+    width:150%;
+    text-align: center;
     padding:0 23px;
+    padding-left:20%;
+    
+}
+.sub-menu-wrap{
+  position:absolute;
+  top:100%;
+  right:10%;
+  width:320px;
+  color:black;
+  max-height:0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+}
+.sub-menu{
+  background:#fff;
+  padding:10px;
+  margin:10px;
+  
 }
 
+.profile_logo h3{
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profile_logo img{
+  width:60px;
+  border-radius:50%;
+  margin-right:15px;
+}
 /* #search{
     padding: 8px 15px;
     font-size:10px;
@@ -69,17 +131,54 @@
 #search:hover{
     color:grey;
 }*/
+.sub-menu hr{
+  border:0;
+  height:1px;
+  width:100%;
+  background:#ccc;
+  margin:15px 0 10px;
 
+}
+.sub-menu-link{
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  color:black;
+  margin:12px 0;
+}
+.sub-menu-link p{
+  width:100%;
 
+}
+.sub-menu-link img{
+  width:40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding:8px;
+  margin-right:15px;
+}
+
+.sub-menu-link span{
+  font-size:22px;
+  transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+  transform:translateX (5px);
+}
+
+.paraPro:hover{
+  font-weight:600;
+}
 .background{
-    background:rgba(0,0,0,0.7) url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+    background:rgba(0,0,0,0.4) url('../img slide/matthew-feeney-Nwkh-n6l25w-unsplash.jpg');
     background-size: cover;
-    background-blend-mode: darken;
+    min-width: fit-content;
 }
 
 .firstsection{
-    height: 150vh;
-    background-color: #9DBFAF;
+    height: 160vh;
+    background-blend-mode:darken;
+  
 }
 
 .box-main{
@@ -93,21 +192,29 @@
 }
 
 .firsthalf{
-   width: 95%;
+   width: 300%;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top:5%;
+   padding-bottom: 30%;
    display:flex;
+   font-size: large;
    flex-direction: column;
    justify-content: center;
+   color:black;
+   font-size: xx-large;
 
 }
 
 .secondHalf{
-   width:30%;
+   width:70%;
+   padding-bottom: 30%;
 
 
 
 }
 .secondHalf img{
-    width: 80%;
+    width: 100%;
     padding : 4px ;
     border:4px solid white;
     border-radius: 100px;
@@ -115,46 +222,58 @@
     margin:auto;
 }
 .text-big{
-   font-size: 40px;
+   font-size: 45px;
+   color:white;
+   padding-bottom: 1%;
    
 
 }
 .text-small{
-   font-size: 15px;
+   font-size: 20px;
+   color:white;
+   padding-bottom: 2%;
 
 
 
 }
-
+a {
+  text-decoration: black;
+  color: white;
+}
 .btn{
     padding:8px 15px;
-    margin:5px 2px;
-    border:2px solid white;
-    border-radius:6px;
+    margin:3px 2px;
+    border:3px solid white;
+    border-radius:30px;
     background:none;
     color:white;
     cursor:pointer;
     transition-duration: 0.75s;
-    
+    font-size: small;
+    font-family:'Ubuntu', sans-serif;
 }
 
 .Share{
     padding:8px 15px;
-    margin:5px 2px;
-    border:2px solid white;
-    border-radius: 6px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:3px 2px;
+    border:3px solid white;
+    border-radius:30px;
+    font-family:'Ubuntu', sans-serif;
     background: none;
     color:white;
     cursor:pointer;
+    font-size: small;
+    font-family:'Ubuntu', sans-serif;
+    transition-duration: 0.75s;
 }
 .Share:hover{
-    background-color: white;
-    color:black;
+    background-color:grey;
+    color:white;
+    
 }
 .btn:hover{
-    background-color: white;
-    color: black;
+    background-color: grey;
+    color: white;
 
 }
 .btn-sm{
@@ -189,7 +308,7 @@
   
   .searchTerm {
     width: 100%;
-    border: 3px solid rgb(108, 104, 104);
+    border: 3px solid rgb(62, 60, 60);
     border-right: none;
     padding: 5px;
     height: 20px;
@@ -198,15 +317,15 @@
     color: #9DBFAF;
   }
   
-  .searchTerm:focus{
+  .searchTermfocus{
     color: 00B4CCs;
   }
   
   .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid rgb(108, 104, 104);
-    background: rgb(108, 104, 104);
+    border: 1px rgb(62, 60, 60);
+    background:rgb(62, 60, 60) ;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -220,15 +339,17 @@
   }
 
   .sectionSubTag{
-    font-family: 'Ubuntu', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color:#fff ;
+    font-size: larger;
+
   }
 
   .paras{
     padding: 10px 95px;
   }
   .sectionleft{
-    height:500px;
-    padding-right: 10%;
+    height:400px;
     display:flex;
     align-items:center;
     justify-content: space-evenly;
@@ -237,101 +358,186 @@
     font-family:'Ubuntu', sans-serif ;
     flex-direction:row-reverse;
   }
+/* 
+  .thumbnail{
+    background-color: aliceblue;
+  } */
+
+
   
   .thumbnail img{
     width:200px;
     border:2px solid black;
     border-radius:26px;
     margin-top:29px;
+    margin-bottom: 29px;
   }
 
   .contact{
-    background-color:solid grey;
+    background-blend-mode: darken;
     font-family:'Ubuntu', sans-serif;
     height: 700px;
     width:100%;
+    color: azure;
   }
   .text-center{
     text-align: center;
     font-family:'Ubuntu', sans-serif ;
-    padding: 30px;
-    font-size: 50px;
+    padding: 8px;
+    font-size: 45px;
+    padding-left: 5%;
+    padding-top: 30px;
   }
 
 
   .form{
-    max-width: 400px;
+    max-width: 800px;
     margin: 42px auto;
+    padding-right: 10%;
   }
 
-  .form input{
-    margin:30px 0;
-    padding:5px 3px;
-    width:100%;
-    font-size: 19px;
-    border:2px solid grey;
+  .form-input{
+    margin:15px 0;
+    padding:6px 3px;
+    width:120%;
+    font-size: 15px;
+    border:2px solid black;
     border-radius: 6px;
+    font-family:'Ubuntu', sans-serif;
   }
 
   /* Section bacckground*/
   .background1{
-    background: url('../img/computers.jpg');
+    background: rgba(0,0,0,0.7) url('../img/computers.jpg');
     padding-right: 10%;
     background-size: cover;
     background-blend-mode: darken;
     max-width: 100%;
-    height: 500px;
+    height: 600px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-color: white;
+    
   
 }
 
 .background2{
-  background: url('../img/evoklai.jpg');
-  padding-right: 10%;
+  background: rgba(0,0,0,0.7) url('../img/evoklai.jpg');
+  padding-left: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .background3{
-  background: url('../img/ar vr.jpg');
+  background: rgba(0,0,0,0.7) url('../img/ar vr.jpg');
   padding-right: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 
 .background4{
-  background: url('../img/data analytics.jpg');
-  padding-right: 10%;
+  background:rgba(0,0,0,0.7)  url('../img/data analytics.jpg');
+  padding-left: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .background5{
-  background: url('../img/james-a-molnar-jMDtJtFs8EQ-unsplash.jpg');
+  background:rgba(0,0,0,0.7)  url('../img/james-a-molnar-jMDtJtFs8EQ-unsplash.jpg');
   padding-right: 10%;
   background-size: cover;
   background-blend-mode: darken;
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Contact background */
 .backgroundC{
-  background: url('../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+  background:rgba(0,0,0,0.7)  url('../img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg');
   background-size: cover;
   background-blend-mode: darken;
-  max-width: 100%;
-  height: 500px;
+  max-width: 120%;
+  height: 750px;
+}
+.text-footer{
+    text-align:left;
+    font-family:'Ubuntu', sans-serif ;
+    display:flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color:#0d3f56 ;
+    color:#fff
+
+}
+.line{
+  width:33px;
+  background-color: white;
+  height:4px;
+  margin:5px 3px;
+
+}
+.A-extra { /* Green */
+    border-radius:20px;
+    border-color:black;
+    font-family:'Ubuntu', sans-serif;
+    color:black;
+    cursor:pointer;
+    font-size: small;
+    font-family:'Ubuntu', sans-serif;
+    transition-duration: 0.75s;
+    width: 150px;
+    height: 7vh;
+    margin-left: 27px; /* isse ham margin define krke set kiye hai, tumhra thumbnail section 207px ka tha, aur button 150px ka, toh margin 27 ka liye hai  */
+    /* padding-left: 10%; */
+}
+.A-extra:hover{
+  background-color: grey;
+  color:white;
+}
+
+.button{
+  padding-top: 30%;
+}
+
+
+
+.active, .nav-list li:hover{
+  background:#2e7ea3b2;
+  border-radius: 1px;
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.nav-list li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background:#2e7ea3b2;
+  margin-top:30px;
+
+}
+.nav-list li:hover .sub-menu-1 ul{
+  display:block;
+  margin:5px;
+  
+}
+.nav-list li:hover .sub-menu-1 ul li
+{
+  width: 150px;
+  padding:10px;
+  border-bottom: 1px dotted #fff;
+  background:transparent;
+  border-radius:0;
+  text-align: left;
 }
